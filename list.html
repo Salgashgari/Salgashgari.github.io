@@ -57,7 +57,7 @@
                 /*
                 This section creates the headers for the table
                 */
-                ar tr = jsonTable.insertRow(-1);
+                var tr = jsonTable.insertRow(-1);
                 var headers = Object.keys(workExperience[0]);  // Extract headers from the first object in the array
                 headers.forEach(header => {
                     var th = document.createElement("th");
@@ -78,7 +78,7 @@
                 /*
                 This section adds the table to the HTML
                 */
-                ar divContainer = document.getElementById("showDataJSON");
+                var divContainer = document.getElementById("showDataJSON");
                 divContainer.innerHTML = "";
                 divContainer.appendChild(jsonTable);
             })
